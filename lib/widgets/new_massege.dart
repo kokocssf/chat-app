@@ -39,7 +39,7 @@ class _NewMassegeState extends State<NewMassege> {
             .doc(user.uid)
             .get();
 
-    final userName = userData.data()?["username"] ?? "Unknown";
+    final userName = userData.data()?["userame"] ?? "Unknown";
     final userImage = userData.data()?["image_url"] ?? "default_image_url";
 
     await FirebaseFirestore.instance.collection("chats").add({
